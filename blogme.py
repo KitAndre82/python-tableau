@@ -74,8 +74,6 @@ favfood(fastfood)
 def keywordflag(keyword):
     length=len(data)
     keyword_flag=[]
-    
-    
     for x in range(0,length):
         heading = data['title'][x]
         try:
@@ -85,10 +83,7 @@ def keywordflag(keyword):
                 flag=0
         except:
             flag=0
-            
-        keyword_flag.append(flag)
-
-        
+        keyword_flag.append(flag)      
     return keyword_flag
         
 keywordflag = keywordflag('murder')
