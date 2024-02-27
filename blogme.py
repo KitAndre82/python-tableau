@@ -26,36 +26,8 @@ data.groupby(['source_id'])['article_id'].count()
 
 data.groupby(['source_id'])['engagement_reaction_count'].sum()
 
-#dropping a column
-
-data = data.drop('engagement_comment_plugin_count', axis=1)
-
 data.describe()
 data.info()
-
-#functions
-
-def aboutMe(name):
-    print('My name is '+name)
-    return name
-
-a=aboutMe('Ande')
-
-def thisIsMe(first_name, last_name, location):
-    print('My name is '+first_name+' '+last_name+'. '+'I am from '+location)
-    return first_name, last_name, location
-
-details=thisIsMe('Ande','Kitatta','Uganda')
-
-#for loops in functions
-
-def favfood(food):
-    for x in food:
-        print('I love '+x)
-        
-fastfood = ['pie','pizza','burger','fries']
-
-favfood(fastfood)
         
 #creating a keyword flag
 
